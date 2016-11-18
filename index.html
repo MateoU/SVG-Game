@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>SVG Game</title>
   </head>
   <body>
-    <svg width="100%" viewBox="0 0 1078 500" style="background-color: #010213">
-      <image id="alien" x="0" y="0" width="32" height="32" xlink:href="alien.png"/>
+    <svg id="thing" width="100%" viewBox="0 0 1078 500" style="background-color: #010213">
+      <text id="bleh" x="900" y="50" fill="white">Food Eaten: 0</text>
+      <image id="alien2" x="400" y="0" width="32" height="32" xlink:href="alien.png">
+        <animate id="goDown2" attributeName="y" from="0" to="500" dur="5" begin="0; goDown2.end"/>
+      </image>
       <image id="ufo" x="500" y="250" width="64" height="64" xlink:href="UFO.gif"/>
     </svg>
     <script src="script.js" type="text/javascript"></script>
