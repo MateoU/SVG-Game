@@ -13,9 +13,15 @@
       <button onclick="reloadPage()">Restart?</button>
     </div>
     <svg id="thing" width="100%" viewBox="0 0 1078 493" style="background-color: #010213">
-      <text id="bleh" x="900" y="50" fill="white">Score: 10</text>
+      <text id="bleh" x="900" y="50" fill="white">Score: 20</text>
       <image id="alien2" x="400" y="0" width="32" height="32" xlink:href="alien.png">
         <animate id="goDown2" attributeName="y" from="0" to="493" dur="5" begin="0; goDown2.end"/>
+      </image>
+      <image id="alien" x="700" y="0" width="32" height="32" xlink:href="alien.png">
+        <animate id="goDown" attributeName="y" from="0" to="493" dur="5" begin="0; goDown.end"/>
+      </image>
+      <image id="meteor" x="400" y="0" width="17" height="17" xlink:href="meteor.png">
+        <animate id="goDown3" attributeName="y" from="0" to="493" dur="4" begin="0; goDown3.end"/>
       </image>
       <image id="ufo" x="500" y="250" width="64" height="64" xlink:href="UFO.gif"/>
     </svg>
